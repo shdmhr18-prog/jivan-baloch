@@ -3,18 +3,51 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>JIVAN BALOCH</title>
+<title>JIVAN BALOCH | جیوان بلوچ</title>
 <style>
-body{margin:0;min-height:100vh;display:flex;flex-direction:column;
-align-items:center;justify-content:center;background:#0b0f19;
-color:#fff;font-family:Tahoma,sans-serif;text-align:center}
-h1{font-size:2.5rem;letter-spacing:4px;margin:0}
-p{color:#8b9bb4;font-size:1.3rem}
+:root{--bg:#0b0f19;--card:#141b2b;--line:#222c42;--mut:#8b9bb4;--acc:#22d3a6}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:#fff;font-family:Tahoma,sans-serif;line-height:1.8}
+.w{max-width:900px;margin:auto;padding:24px 16px}
+header{text-align:center;padding:48px 0 16px}
+h1{margin:0;font-size:2.2rem;letter-spacing:4px}
+.fa{color:var(--mut);font-size:1.3rem;margin:4px 0 12px}
+.note{display:inline-block;border:1px solid var(--acc);color:var(--acc);border-radius:20px;padding:4px 16px;font-size:.9rem}
+h2{text-align:center;margin:40px 0 16px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-align:center}
+.gb{font-size:2rem;font-weight:bold;color:var(--acc)}
+.mut{color:var(--mut)}
+.btn{width:100%;margin-top:14px;padding:10px;border-radius:10px;border:1px solid var(--line);background:transparent;color:var(--mut);font-family:inherit}
+ul{list-style:none;padding:0;margin:0}
+li{padding:6px 0;color:var(--mut)}
+footer{text-align:center;color:var(--mut);padding:32px 0;font-size:.9rem}
 </style>
 </head>
 <body>
+<div class="w">
+<header>
 <h1>JIVAN BALOCH</h1>
-<p>جیوان بلوچ</p>
-<p>به‌زودی</p>
+<div class="fa">جیوان بلوچ</div>
+<span class="note">سایت در حال راه‌اندازی است</span>
+</header>
+
+<h2>پلن‌ها</h2>
+<div class="grid">
+<div class="card"><div class="gb">10 GB</div><p class="mut">مدت و قیمت: به‌زودی</p><button class="btn" disabled>به‌زودی</button></div>
+<div class="card"><div class="gb">30 GB</div><p class="mut">مدت و قیمت: به‌زودی</p><button class="btn" disabled>به‌زودی</button></div>
+<div class="card"><div class="gb">50 GB</div><p class="mut">مدت و قیمت: به‌زودی</p><button class="btn" disabled>به‌زودی</button></div>
+</div>
+
+<h2>امکانات (در حال آماده‌سازی)</h2>
+<div class="card"><ul>
+<li>کانفیگ اختصاصی WireGuard برای هر کاربر</li>
+<li>پنل کاربری با نمایش حجم مصرفی و تاریخ انقضا</li>
+<li>تمدید سرویس</li>
+<li>پشتیبانی</li>
+</ul></div>
+
+<footer>© JIVAN BALOCH</footer>
+</div>
 </body>
 </html>
